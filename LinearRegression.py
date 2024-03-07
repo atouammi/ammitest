@@ -35,10 +35,10 @@ print(f"x_train:{x_train.shape}, y_train: {y_train.shape}, x_test: {x_test.shape
 
 
 
-# plt.scatter(x_train[:,1],y_train, marker="+")
-# plt.xlabel("feature")
-# plt.ylabel('target')
-# plt.show()
+plt.scatter(x_train[:,1],y_train, marker="+")
+plt.xlabel("feature")
+plt.ylabel('target')
+plt.show()
 
 class LogisticRegression:
   
