@@ -41,8 +41,7 @@ plt.ylabel('target')
 plt.show()
 
 class LogisticRegression:
-  
-
+  ''' Class of linear Regression model'''
   def __init__(self):
 
     self.theta = None
@@ -52,7 +51,12 @@ class LogisticRegression:
 
 
   def linear(self, X, theta): # linear function
+    ''' Linear function for the the forward pass
+    args : X ----> A matrix of size NxD
+         : theta ------> A vector of dimention  Dx1
 
+    return : A vector of dimension Nx1 
+       '''
     return X@theta
 
 
