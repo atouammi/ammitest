@@ -1,7 +1,7 @@
 # BootCamp AMMI 2024
 
 
-## This repositories contains some implementation from scratch of linear an logistic regression
+## This repositories contains some implementation from scratch of linear and logistic regression
 
 
 ### With Linear Linear regression we have implemented four types of optimatization
