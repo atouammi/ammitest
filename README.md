@@ -5,10 +5,11 @@
 
 
 ### With Linear Linear regression we have implemented four types of optimatization
-- Gradient Descent simple 
+- Gradient Descent simple `LinearRegression_withSimpleGD.py`
 - Stochastic Gradient Descent
 - Gradient Descent with mini batch
-- Gradient Descent with momentum
+- Gradient Descent with momentu
+### 
 
 
 
