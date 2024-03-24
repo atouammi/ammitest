@@ -1,4 +1,4 @@
-# BootCamp AMMI 2024
+# BootCamp AMMI 2024- Neural Network
 
 
 ## This repositories contains some implementation from scratch of Neural network
