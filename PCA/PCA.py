@@ -69,3 +69,8 @@ class PCA:
 my_pca = PCA(n_component=2)
 my_pca.fit(X)
 new_X = my_pca.transform(X)
+
+
+
+plt.scatter(new_X[:,0], new_X[:,1],c=y)
+plt.show()
