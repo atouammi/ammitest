@@ -5,9 +5,9 @@
 
 
 ### This code has :
-- A class `Layer Dense` tha i use to after to create my layers
-- A class Activation of activation functions `Sigmoid`, ` ReLu` ,`Soltmax`, but use only a the `Sigmoid`
-- Script for the training , using Gradient descent as Optimizer
+- A class `Layer Dense` tha I use to after to create my layers
+- A class Activation of activation functions `Sigmoid`, ` ReLu` ,`Soltmax`, but I use only  the `Sigmoid`
+- Script for the training , using Gradient descent as Optimizer and `NLL` as a loss function
 
 - Some functions: `prediction()` and , `Accuracy`
 
