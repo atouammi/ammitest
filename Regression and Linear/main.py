@@ -15,21 +15,21 @@ from LogisticReg import Logistic_Regression
 
 
 
-# X_class, y_class = make_classification(n_samples= 100, n_features=2, n_redundant=0,
-#                            n_informative=2, random_state=1,
-#                            n_clusters_per_class=1)
+X_class, y_class = make_classification(n_samples= 100, n_features=2, n_redundant=0,
+                           n_informative=2, random_state=1,
+                           n_clusters_per_class=1)
 
 
 
-x,y =generate_data()
+# x,y =generate_data()
 
 
-x_train,y_train,x_test,y_test=split_data(x,y)
+x_train,y_train,x_test,y_test=split_data(X_class,y_class)
 print(f"x_train:{x_train.shape}, y_train: {y_train.shape}, x_test: {x_test.shape}, y_test: {y_test.shape}")
 
 
 
-plt.scatter(x_train[:,1],y_train, marker="+")
+plt.scatter(x_train[:,0],x_train[:,1], c=y_train)
 plt.xlabel("feature")
 plt.ylabel('target')
 plt.show()

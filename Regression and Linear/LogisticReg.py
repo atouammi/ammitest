@@ -7,18 +7,6 @@ np.random.seed(0)
 
 
 
-x_train1,y_train1,x_test1,y_test1 = split_data_1(X_class,y_class)
-y_train1 = y_train1.reshape(-1,1)
-
-
-#plt.scatter(x_train1[:,0],x_train1[:,1],c = y_train1)
-
-
-
-y_test1 = y_test1.reshape(-1,1)
-print(f"x_train1:{x_train1.shape}, y_train1: {y_train1.shape}, x_test1: {x_test1.shape}, y_test1: {y_test1.shape}")
-
-
 
 class Logistic_Regression:
   ''' Class of Logistic Regression model for binary case '''

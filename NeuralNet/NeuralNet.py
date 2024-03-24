@@ -50,30 +50,29 @@ plt.show()
 
 class Layer_Dense:
     def __init__(self,n_inputs,n_neurons):
-        
+        # initialization with xavier's technic
         self.weights = np.random.normal(0,2/(n_inputs+n_neurons),(n_inputs,n_neurons))
         
         self.biases = np.ones((1,n_neurons))
         
 
     
-    
+    #  the forward
     def forward(self,X):
         
         self.output = np.dot(X , self.weights)+ self.biases
-        
+# Activation function     
 class Activation_ReLu:
     def forward(self,x):
         self.output = np.maximum(0,x)
+
+
 
 class Activation_Sigmoid:
     def forward(self,x):
         self.output = 1/(1+np.exp(-x))
 
 class Activation_softmax:
-    
-    
-    
     
     def forward(self,x):
         exp_values = np.exp(x-np.max(x, axis = 1, keepdims = True))

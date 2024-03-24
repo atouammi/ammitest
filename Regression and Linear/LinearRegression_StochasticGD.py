@@ -4,42 +4,6 @@ np.random.seed(0)
 
 
 
-# generate data
-def generate_data(n= 1000):
-  np.random.seed(0)
-  x = np.linspace(-5.0, 5.0, n).reshape(-1,1)
-  y= (29 * x + 30 * np.random.rand(n,1)).squeeze()
-  x = np.hstack((np.ones_like(x), x))
-  return x,y
-
-
-# generate data
-x,y= generate_data()
-# check the shape
-y = y.reshape(-1,1)
-print ((x.shape,y.shape))
-
-
-
-def split_data(x,y,train_perc=0.8):
-  N=x.shape[0]
-  train_size=round(train_perc*N)
-  x_train,y_train=x[:train_size,:],y[:train_size]
-  x_test,y_test=x[train_size:,:],y[train_size:]
-  return x_train,y_train,x_test,y_test
-
-
-
-x_train,y_train,x_test,y_test=split_data(x,y)
-print(f"x_train:{x_train.shape}, y_train: {y_train.shape}, x_test: {x_test.shape}, y_test: {y_test.shape}")
-
-
-
-# plt.scatter(x_train[:,1],y_train, marker="+")
-# plt.xlabel("feature")
-# plt.ylabel('target')
-# plt.show()
-
 class LinearRegressionSGD:
   
 
