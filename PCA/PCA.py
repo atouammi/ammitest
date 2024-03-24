@@ -71,6 +71,10 @@ my_pca.fit(X)
 new_X = my_pca.transform(X)
 
 
+print(f" the shape of the new data = {new_X.shape}")
+
+
+
 
 plt.scatter(new_X[:,0], new_X[:,1],c=y)
 plt.show()
