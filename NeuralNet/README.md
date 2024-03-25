@@ -8,8 +8,6 @@
 - A class `Model` tha I use to after to create my layers.
   The class `Model` has the attributes `W1` and `W2` as weigths of the neural network and biases `b1` , `b2`.
 
-  $X---W_1---b_1--->Z_1--->A_1----W_2---b_2----Z_2--->A_2$
-
   $ Z_1 = W_1X b_1 , A1 = \sigma(Z_1) , Z_2 = W_2A_1 + b_2, A_2 = \sigma(Z_2).  \sigma(z) = \frac{1}{1+e^{-z}}$ 
   
   is the activation function called `sigmoid`.
