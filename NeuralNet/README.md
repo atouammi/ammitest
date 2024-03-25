@@ -16,9 +16,9 @@
   
   $Z_2 = W_2A_1 $,
 
-  $A_2 = \sigma(Z_2)$  where 
+  $A_2 = \sigma(Z_2)$.
   
-  $ \sigma(z) = \dfrac{1}{1+e^{-z}}$ 
+  $ \sigma(z) = \frac{1}{1+e^{-z}}$ 
   
   is the activation function called `sigmoid`.
 
